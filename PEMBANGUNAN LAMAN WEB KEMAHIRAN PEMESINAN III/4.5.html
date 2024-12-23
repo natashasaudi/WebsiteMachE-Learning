@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.5 Datum dan Dimensi dalam Pemesinan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Umum */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Container */
+        .sectionM {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px 30px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            line-height: 1.8;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 28px;
+            color: #2b7dbc;
+            margin-bottom: 20px;
+        }
+
+        article h3 {
+            font-size: 22px;
+            color: #2b7dbc;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        article p, article ul {
+            margin-bottom: 20px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        article ul {
+            padding-left: 20px;
+            list-style: disc;
+        }
+
+        article ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Butang Kembali */
+        .back-button {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .back-button .btn {
+            display: inline-block;
+            background-color: #2b7dbc;
+            color: white;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .back-button .btn:hover {
+            background-color: #246799;
+            transform: scale(1.05);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #f0f0f0;
+            color: #777;
+            font-size: 14px;
+            margin-top: 40px;
+        }
+
+        /* Align text to the left in the article */
+        article {
+            text-align: left;
+        }
+
+        article p, article ul {
+            text-align: left;
+        }
+
+        /* Image Styling */
+        .sectionM img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+/* Style untuk membungkus gambar */
+        .image-container {
+            text-align: center; /* Menyelaraskan gambar di tengah */
+            margin: 20px 0; /* Ruang atas dan bawah */
+        }
+
+        /* Gaya untuk gambar */
+        .image-container img {
+            border: 5px solid #000; /* Bingkai hitam dengan ketebalan 5px */
+            border-radius: 10px; /* Opsional: Memberikan sudut melengkung */
+            width: auto; /* Pastikan ukuran asli digunakan */
+            max-width: 50%; /* Supaya responsif pada layar kecil */
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">MachE-Learning</div>
+        <ul>
+            <li><a href="index.html">Utama</a></li>
+            <li><a href="modul.html">Modul</a></li>
+            <li><a href="tutorial.html">Tutorial</a></li>
+            <li><a href="kuiz.html">Kuiz</a></li>
+            <li><a href="tentang-kami.html">Tentang Kami</a></li>
+            <li><a href="hubungi-kami.html">Hubungi Kami</a></li>
+            <li><a href="hubungi-pensyarah.html">Hubungi Pensyarah</a></li>
+        </ul>
+    </nav>
+
+    <section class="sectionM">
+        <h2 class="section-title">Datum dan Dimensi dalam Pemesinan</h2>
+
+  
+        <article>
+            <h3>Pengenalan kepada Datum</h3>
+            <p>Datum merujuk kepada titik, garis, atau permukaan yang digunakan sebagai asas untuk mengukur dan menentukan kedudukan atau dimensi komponen. Datum berfungsi sebagai rujukan tetap atau titik asal bagi semua ukuran dan pergerakan dalam reka bentuk dan pemesinan.</p>
+
+            <h3>Jenis Datum</h3>
+            <ul>
+                <li><strong>Datum Titik:</strong> Titik rujukan yang digunakan untuk mengukur kedudukan komponen.</li>
+                <li><strong>Datum Garis:</strong> Garis rujukan yang digunakan untuk mengukur dimensi panjang atau jarak.</li>
+                <li><strong>Datum Permukaan:</strong> Permukaan rata atau datar yang digunakan sebagai asas bagi pengukuran dimensi atau kedudukan komponen.</li>
+            </ul>
+
+            <h3>Fungsi Datum</h3>
+            <ul>
+                <li>Memberikan asas yang konsisten untuk pengukuran.</li>
+                <li>Memastikan ketepatan dan konsistensi dalam proses pemesinan dan pemasangan.</li>
+                <li>MBantu dalam memastikan kedudukan komponen dalam hubungan dengan bahagian lain.</li>
+            </ul>
+
+            <h3>Penggunaan Datum dalam Pemesinan</h3>
+            <p>Dalam proses pemesinan, datum digunakan untuk memastikan komponen yang dihasilkan mempunyai kedudukan yang betul dan konsisten. Sebagai contoh:</p>
+            <ul>
+                <li>Datum utama digunakan sebagai titik permulaan untuk semua pengukuran dimensi.</li>
+                <li>Datum sekunder boleh digunakan jika perlu untuk memastikan pemesinan pada sisi atau sudut tertentu.</li>
+            </ul>
+
+            <h3>Pengenalan kepada Dimensi</h3>
+            <p>Dimensi merujuk kepada ukuran atau nilai yang diberikan untuk menentukan saiz, bentuk, dan kedudukan sesuatu objek. Dalam konteks pemesinan dan reka bentuk, dimensi digunakan untuk menggambarkan semua ciri fizikal sesuatu komponen, seperti panjang, lebar, tinggi, diameter, dan sudut.</p>
+
+            <h3>Jenis Dimensi</h3>
+            <ul>
+                <li><strong>Dimensi Linear:</strong> Mengukur panjang, lebar, dan ketinggian sesuatu objek.</li>
+                <li><strong>Dimensi Sudut:</strong> Mengukur sudut antara dua garis atau permukaan.</li>
+                <li><strong>Dimensi Diameter:</strong> Mengukur diameter sesuatu bulatan atau silinder.</li>
+                <li><strong>Dimensi Radius:</strong> Mengukur jarak dari pusat bulatan ke permukaan luar.</li>
+            </ul>
+
+    <!-- Container untuk gambar -->
+    <div class="image-container">
+        <img src="datum.jpg" alt="Machine Concept Image">
+    </div>
+            <h3>Simbol Dimensi</h3>
+            <ul>
+                <li>Ø: Simbol untuk diameter.</li>
+                <li>R: Simbol untuk radius.</li>
+                <li>' (Prime): Digunakan untuk menunjukkan ukuran dalam arah tertentu.</li>
+                <li>°: Simbol untuk sudut.</li>
+            </ul>
+
+            <h3>Peraturan dan Prinsip Penggunaan Dimensi dalam Lukisan Teknikal</h3>
+            <p>Lukisan teknikal adalah alat utama dalam pemesinan untuk menggambarkan dimensi dan bentuk komponen. Beberapa peraturan dan prinsip penting dalam penggunaan dimensi adalah:</p>
+            <ul>
+                <li><strong>Dimensi Mutlak dan Relatif:</strong> Dimensi mutlak memberikan ukuran yang tepat dari satu titik tetap, manakala dimensi relatif mengukur jarak antara dua titik atau permukaan berkenaan.</li>
+                <li><strong>Penggunaan Dimensi Utama:</strong> Dimensi utama digunakan untuk menggambarkan ukuran utama dan kedudukan komponen.</li>
+                <li><strong>Ketepatan dan Toleransi:</strong> Toleransi menunjukkan had yang dibenarkan untuk penyimpangan dari ukuran yang ditetapkan.</li>
+            </ul>
+
+            <h3>Penggunaan Datum dan Dimensi dalam Pemesinan</h3>
+            <ul>
+                <li><strong>Menetapkan Datum dalam Lukisan Teknikal:</strong> Lukisan teknikal akan menunjukkan datum yang digunakan untuk setiap komponen.</li>
+                <li><strong>Mengukur dan Menetapkan Dimensi Semasa Pemesinan:</strong> Pengendali mesin perlu memastikan dimensi yang ditetapkan dalam lukisan diikuti dengan tepat.</li>
+                <li><strong>Pemeriksaan Kualiti dan Ketepatan:</strong> Setelah pemesinan selesai, komponen perlu diperiksa untuk memastikan dimensi dipatuhi dengan tepat.</li>
+            </ul>
+        </article>
+
+        <div class="back-button">
+            <a href="modul.html" class="btn">Kembali ke Modul</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Neotan Technology. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utama | MachE-Learning</title>
+    <!-- Google Fonts for Enhanced Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrQd6+N0tzdgiXlNULhJ5PSh3OeVgTtFF+XQvDcg3LzBnYxk4+zLqJ6UG6A/wt6upGdr1eE7zjvFvKuklg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigasi -->
+    <nav>
+        <div class="logo">MachE-Learning</div>
+        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+
+        <ul>
+            <li><a href="index.html">Utama</a></li>
+            <li><a href="modul.html">Modul</a></li>
+            <li><a href="tutorial.html">Tutorial</a></li>
+            <li><a href="kuiz.html">Kuiz</a></li>
+            <li><a href="tentang-kami.html">Tentang Kami</a></li>
+            <li><a href="hubungi-kami.html">Hubungi Kami</a></li>
+            <li><a href="hubungi-pensyarah.html">Hubungi Pensyarah</a></li>
+        </ul>
+    </nav>
+    <!-- Seksyen Kuiz -->
+    <section class="sectionK" id="kuiz">
+        <h2 class="section-title">Kuiz</h2>
+        <p>Sila jawab soalan berikut berdasarkan modul dan tutorial yang telah diberikan.</p><br>
+
+        <form id="quiz-form">
+            <div style="text-align: left;">
+                <label for="question1">1. Apakah tujuan utama memakai pelindung mata semasa bekerja di bengkel CNC?</label><br>
+                <input type="radio" name="question1" value="A"> A) Untuk mengelakkan debu memasuki hidung<br>
+                <input type="radio" name="question1" value="B"> B) Untuk melindungi mata daripada serpihan logam<br>
+                <input type="radio" name="question1" value="C"> C) Untuk meningkatkan penglihatan semasa bekerja<br>
+                <input type="radio" name="question1" value="D"> D) Untuk kelihatan lebih profesional<br><br><br>
+            </div>
+            <div style="text-align: left;">
+                <label for="question2">2. Kod apakah yang digunakan untuk menggerakkan alat pemotong dalam bentuk linear pada mesin CNC?</label><br>
+                <input type="radio" name="question2" value="A"> A) G00<br>
+                <input type="radio" name="question2" value="B"> B) G02<br>
+                <input type="radio" name="question2" value="C"> C) G01<br>
+                <input type="radio" name="question2" value="D"> D) G03<br><br><br>
+            </div>
+            <div style="text-align: left;">
+                <label for="question3">3. Bahagian mesin CNC Milling yang memegang alat pemotong dipanggil:</label><br>
+                <input type="radio" name="question3" value="A"> A) Bed<br>
+                <input type="radio" name="question3" value="B"> B) Spindle<br>
+                <input type="radio" name="question3" value="C"> C) Axis<br>
+                <input type="radio" name="question3" value="D"> D) Tool Holder<br><br><br>
+            </div>
+            <div style="text-align: left;">
+                <label for="question4">4. Apakah arah pemotongan dalam climb milling?</label><br>
+                <input type="radio" name="question4" value="A"> A) Seiring dengan putaran alat pemotong<br>
+                <input type="radio" name="question4" value="B"> B) Ke arah spindle<br>
+                <input type="radio" name="question4" value="C"> C) Berlawanan dengan putaran alat pemotong<br>
+                <input type="radio" name="question4" value="D"> D) Berputar ke arah atas<br><br><br>
+            </div>
+            <div style="text-align: left;">
+                <label for="question5">5. Alat yang digunakan untuk memeriksa dimensi bahan kerja adalah:</label><br>
+                <input type="radio" name="question5" value="A"> A) Pemutar skru<br>
+                <input type="radio" name="question5" value="B"> B) Mikrometer<br>
+                <input type="radio" name="question5" value="C"> C) Pisau pemotong<br>
+                <input type="radio" name="question5" value="D"> D) Spindle<br><br><br>
+            </div>
+            <div style="text-align: left;">
+                <label for="question6">6. Apakah fungsi kod M03 dalam pengaturcaraan CNC?</label><br>
+                <input type="radio" name="question6" value="A"> A) Hidupkan spindle<br>
+                <input type="radio" name="question6" value="B"> B) Matikan mesin<br>
+                <input type="radio" name="question6" value="C"> C) Gerakkan alat pemotong secara linear<br>
+                <input type="radio" name="question6" value="D"> D) Lakukan pemotongan bulatan<br><br><br>
+            </div>
+            <div style="text-align: left;">
+                <label for="question7">7. Apakah operasi utama pada mesin CNC Lathe?</label><br>
+                <input type="radio" name="question7" value="A"> A) Mengisar bahan kerja<br>
+                <input type="radio" name="question7" value="B"> B) Membentuk bahan kerja dengan CAD<br>
+                <input type="radio" name="question7" value="C"> C) Memotong thread pada bahan kerja<br>
+                <input type="radio" name="question7" value="D"> D) Mengukur bahan kerja<br><br><br>
+            </div>
+            <div style="text-align: left;">
+                <label for="question8">8. Feed rate ditentukan dengan formula:</label><br>
+                <input type="radio" name="question8" value="A"> A) Bilangan Gigi × Ketebalan Potong<br>
+                <input type="radio" name="question8" value="B"> B) RPM × Bilangan Gigi × Jarak Potong Setiap Gigi<br>
+                <input type="radio" name="question8" value="C"> C) RPM × Depth of Cut<br>
+                <input type="radio" name="question8" value="D"> D) Spindle Speed ÷ Bilangan Gigi<br><br><br>
+            </div>
+            <div style="text-align: left;">
+                <label for="question9">9. Apakah maksud datum dalam pengendalian mesin CNC?</label><br>
+                <input type="radio" name="question9" value="A"> A) Saiz bahan kerja sebelum dipotong<br>
+                <input type="radio" name="question9" value="B"> B) Parameter mesin milling<br>
+                <input type="radio" name="question9" value="C"> C) Titik rujukan tetap pada bahan kerja<br>
+                <input type="radio" name="question9" value="D"> D) Kod CNC untuk memulakan operasi<br><br><br>
+            </div>
+            <div style="text-align: left;">
+                <label for="question10">10. Apakah tujuan utama simulasi pengaturcaraan CNC?</label><br>
+                <input type="radio" name="question10" value="A"> A) Untuk meningkatkan kelajuan mesin<br>
+                <input type="radio" name="question10" value="B"> B) Untuk memastikan kod berjalan tanpa ralat<br>
+                <input type="radio" name="question10" value="C"> C) Untuk menguji dimensi bahan kerja<br>
+                <input type="radio" name="question10" value="D"> D) Untuk melatih pekerja dengan mesin CNC<br><br><br>
+            </div>
+
+
+<div style="text-align: left;">
+    <label for="question11">11. Pakai __________ semasa bekerja di bengkel CNC untuk melindungi mata daripada serpihan logam.</label><br>
+    <input type="radio" name="question11" value="A"> A) Topi keselamatan<br>
+    <input type="radio" name="question11" value="B"> B) Pelindung mata<br>
+    <input type="radio" name="question11" value="C"> C) Sarung tangan<br>
+    <input type="radio" name="question11" value="D"> D) Masker<br><br><br>
+</div>
+<div style="text-align: left;">
+    <label for="question12">12. Mesin CNC menggunakan dua jenis kod utama iaitu __________ dan __________.</label><br>
+    <input type="radio" name="question12" value="A"> A) A-code dan Z-code<br>
+    <input type="radio" name="question12" value="B"> B) P-code dan Q-code<br>
+    <input type="radio" name="question12" value="C"> C) G-code dan M-code<br>
+    <input type="radio" name="question12" value="D"> D) C-code dan T-code<br><br><br>
+</div>
+<div style="text-align: left;">
+    <label for="question13">13. Pergerakan mendatar dari kiri ke kanan pada mesin CNC dikenali sebagai __________.</label><br>
+    <input type="radio" name="question13" value="A"> A) Z-axis<br>
+    <input type="radio" name="question13" value="B"> B) X-axis<br>
+    <input type="radio" name="question13" value="C"> C) W-axis<br>
+    <input type="radio" name="question13" value="D"> D) Y-axis<br><br><br>
+</div>
+<div style="text-align: left;">
+    <label for="question14">14. Untuk mengukur dimensi bahan kerja dengan tepat, gunakan __________ atau __________.</label><br>
+    <input type="radio" name="question14" value="A"> A) Pembaris dan pita pengukur<br>
+    <input type="radio" name="question14" value="B"> B) Caliper digital dan mikrometer<br>
+    <input type="radio" name="question14" value="C"> C) Kompas dan sesiku L<br>
+    <input type="radio" name="question14" value="D"> D) Skala dan jangka tolok<br><br><br>
+</div>
+<div style="text-align: left;">
+    <label for="question15">15. __________ ialah titik rujukan tetap pada bahan kerja untuk memulakan operasi.</label><br>
+    <input type="radio" name="question15" value="A"> A) Datum<br>
+    <input type="radio" name="question15" value="B"> B) Tool Holder<br>
+    <input type="radio" name="question15" value="C"> C) Spindle<br>
+    <input type="radio" name="question15" value="D"> D) Axis<br><br><br>
+</div>
+<div style="text-align: left;">
+    <label for="question16">16. Operasi memotong dalam arah berlawanan dengan putaran alat pemotong dikenali sebagai __________.</label><br>
+    <input type="radio" name="question16" value="A"> A) Facing<br>
+    <input type="radio" name="question16" value="B"> B) Climb Milling<br>
+    <input type="radio" name="question16" value="C"> C) Conventional Milling<br>
+    <input type="radio" name="question16" value="D"> D) Turning<br><br><br>
+</div>
+<div style="text-align: left;">
+    <label for="question17">17. Kelajuan spindle ditentukan oleh jenis bahan dan __________ alat pemotong.</label><br>
+    <input type="radio" name="question17" value="A"> A) Keadaan bahan<br>
+    <input type="radio" name="question17" value="B"> B) Saiz<br>
+    <input type="radio" name="question17" value="C"> C) Jenis pemotong<br>
+    <input type="radio" name="question17" value="D"> D) Kedudukan<br><br><br>
+</div>
+<div style="text-align: left;">
+    <label for="question18">18. Kod __________ digunakan untuk menghidupkan spindle dalam pengaturcaraan CNC.</label><br>
+    <input type="radio" name="question18" value="A"> A) G02<br>
+    <input type="radio" name="question18" value="B"> B) M03<br>
+    <input type="radio" name="question18" value="C"> C) G01<br>
+    <input type="radio" name="question18" value="D"> D) M05<br><br><br>
+</div>
+<div style="text-align: left;">
+    <label for="question19">19. Mesin CNC Milling lebih tepat kerana ia menggunakan kawalan __________.</label><br>
+    <input type="radio" name="question19" value="A"> A) Tangan manusia<br>
+    <input type="radio" name="question19" value="B"> B) Hidraulik<br>
+    <input type="radio" name="question19" value="C"> C) Elektrik<br>
+    <input type="radio" name="question19" value="D"> D) Komputer<br><br><br>
+</div>
+<div style="text-align: left;">
+    <label for="question20">20. Pastikan __________ berada berhampiran kawasan bengkel untuk menghadapi kecemasan.</label><br>
+    <input type="radio" name="question20" value="A"> A) Alat pemadam api<br>
+    <input type="radio" name="question20" value="B"> B) Sarung tangan keselamatan<br>
+    <input type="radio" name="question20" value="C"> C) Goggles<br>
+    <input type="radio" name="question20" value="D"> D) Pelindung muka<br><br><br>
+</div>
+
+
+
+            <!-- Repeat similar sections for other questions -->
+            <div class="button-container">
+                <button type="submit" id="submit" class="btn-submit">Hantar</button>
+                <button type="button" id="reset" onclick="resetQuiz()" class="btn-reset">Reset</button>
+            </div>
+            <div id="quiz-result" class="result"></div>
+        </form>
+    </section>
+
+
+<script>
+// Correct answers and justifications
+const correctAnswers = {
+    question1: { answer: "B", justification: "Pelindung mata melindungi mata daripada serpihan logam yang terbang semasa proses pemotongan di bengkel CNC." },
+    question2: { answer: "C", justification: "G01 digunakan untuk menggerakkan alat pemotong dalam bentuk linear pada mesin CNC." },
+    question3: { answer: "B", justification: "Spindle pada mesin CNC Milling memegang alat pemotong semasa operasi." },
+    question4: { answer: "C", justification: "Dalam climb milling, alat pemotong bergerak berlawanan dengan arah putaran, mengurangkan daya geseran." },
+    question5: { answer: "B", justification: "Mikrometer digunakan untuk mengukur dimensi bahan kerja dengan tepat." },
+    question6: { answer: "A", justification: "Kod M03 digunakan untuk menghidupkan spindle dalam pengaturcaraan CNC." },
+    question7: { answer: "C", justification: "Operasi utama pada mesin CNC Lathe ialah memotong thread pada bahan kerja." },
+    question8: { answer: "B", justification: "Feed rate dikira menggunakan formula RPM × Bilangan Gigi × Jarak Potong Setiap Gigi." },
+    question9: { answer: "C", justification: "Datum ialah titik rujukan tetap pada bahan kerja." },
+    question10: { answer: "B", justification: "Simulasi memastikan kod berjalan tanpa ralat sebelum pengeluaran sebenar." },
+    question11: { answer: "B", justification: "Pakai pelindung mata untuk melindungi mata daripada serpihan logam." },
+    question12: { answer: "C", justification: "Mesin CNC menggunakan kod G untuk pergerakan dan kod M untuk fungsi tambahan." },
+    question13: { answer: "B", justification: "Pergerakan mendatar dari kiri ke kanan pada mesin CNC ialah X-axis." },
+    question14: { answer: "B", justification: "Caliper digital dan mikrometer digunakan untuk mengukur dimensi bahan kerja dengan tepat." },
+    question15: { answer: "A", justification: "Datum ialah titik rujukan tetap pada bahan kerja untuk memulakan operasi." },
+    question16: { answer: "C", justification: "Conventional milling ialah operasi memotong dalam arah berlawanan dengan putaran alat pemotong." },
+    question17: { answer: "B", justification: "Kelajuan spindle ditentukan oleh jenis bahan dan saiz alat pemotong." },
+    question18: { answer: "B", justification: "Kod M03 digunakan untuk menghidupkan spindle dalam pengaturcaraan CNC." },
+    question19: { answer: "D", justification: "Mesin CNC Milling lebih tepat kerana ia menggunakan kawalan komputer." },
+    question20: { answer: "A", justification: "Pastikan alat pemadam api berada berhampiran kawasan bengkel untuk kecemasan." }
+};
+
+// Add an event listener to the form submission
+document.getElementById("quiz-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent form from submitting
+
+    let score = 0;
+    let allAnswered = true; // Flag to check if all questions are answered
+    let resultDetails = "";
+
+    // Check answers
+    for (let i = 1; i <= 20; i++) {  // Update to check all 20 questions
+        const question = `question${i}`;
+        const userAnswer = document.querySelector(`input[name="${question}"]:checked`);
+
+        if (!userAnswer) {
+            allAnswered = false; // If any question is not answered, set flag to false
+            break;
+        }
+
+        if (userAnswer.value === correctAnswers[question].answer) {
+            score++;
+            resultDetails += `<p>${i}. Betul: ${correctAnswers[question].justification}</p>`;
+        } else {
+            resultDetails += `<p>${i}. Salah: ${correctAnswers[question].justification}</p>`;
+        }
+    }
+
+    if (!allAnswered) {
+        alert("Anda belum selesai menjawab semua soalan! Sila jawab semua soalan sebelum menghantar.");
+    } else {
+        // Display result with animation if all questions are answered
+        const result = document.getElementById("quiz-result");
+        result.classList.add("fade-in");
+        result.innerHTML = `<h3>Keputusan Kuiz:</h3><p>Skor: ${score} / 20</p>${resultDetails}`;
+    }
+});
+
+// Reset quiz
+function resetQuiz() {
+    // Uncheck all radio buttons
+    const radios = document.querySelectorAll('input[type="radio"]');
+    radios.forEach(radio => radio.checked = false);
+
+    // Reset the result display
+    const result = document.getElementById("quiz-result");
+    result.classList.remove("fade-in");
+    result.innerHTML = '';
+}
+</script>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Neotan Technology. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

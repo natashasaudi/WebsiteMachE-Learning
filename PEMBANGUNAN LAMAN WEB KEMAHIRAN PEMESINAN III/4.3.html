@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.3 Pengukuran dan Alat Ukur</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Umum */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Container */
+        .sectionM {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px 30px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            line-height: 1.8;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 28px;
+            color: #2b7dbc;
+            margin-bottom: 20px;
+        }
+
+        article h3 {
+            font-size: 22px;
+            color: #2b7dbc;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        article p, article ul {
+            margin-bottom: 20px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        article ul {
+            padding-left: 20px;
+            list-style: disc;
+        }
+
+        article ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Butang Kembali */
+        .back-button {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .back-button .btn {
+            display: inline-block;
+            background-color: #2b7dbc;
+            color: white;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .back-button .btn:hover {
+            background-color: #246799;
+            transform: scale(1.05);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #f0f0f0;
+            color: #777;
+            font-size: 14px;
+            margin-top: 40px;
+        }
+
+        /* Align text to the left in the article */
+        article {
+            text-align: left;
+        }
+
+        article p, article ul {
+            text-align: left;
+        }
+
+        /* Image */
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .image-container img {
+            width: 90%; /* Increase the size of the image */
+            max-width: 500px;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">MachE-Learning</div>
+        <ul>
+            <li><a href="index.html">Utama</a></li>
+            <li><a href="modul.html">Modul</a></li>
+            <li><a href="tutorial.html">Tutorial</a></li>
+            <li><a href="kuiz.html">Kuiz</a></li>
+            <li><a href="tentang-kami.html">Tentang Kami</a></li>
+            <li><a href="hubungi-kami.html">Hubungi Kami</a></li>
+            <li><a href="hubungi-pensyarah.html">Hubungi Pensyarah</a></li>
+        </ul>
+    </nav>
+
+    <section class="sectionM">
+        <h2 class="section-title">Pengenalan kepada Pemesinan CNC Milling</h2>
+
+        <div class="image-container">
+            <img src="mesin-CNC-milling.jpg" alt="CNC Milling">
+        </div>
+
+        <article>
+            <h3>Pengenalan kepada Pemesinan CNC Milling</h3>
+            <p>Pemesinan CNC Milling merujuk kepada proses pemesinan menggunakan mesin penggilingan (milling machine) yang dikawal oleh komputer menggunakan sistem Computer Numerical Control (CNC). Mesin CNC Milling digunakan untuk memotong bahan seperti logam, plastik, dan kayu dalam bentuk tertentu dengan ketepatan yang sangat tinggi. Proses ini melibatkan pergerakan alat pemotong yang berputar, dan bahan kerja diletakkan pada meja mesin untuk diproses mengikut arahan yang diberikan dalam bentuk kod NC.</p>
+
+            <h3>1. Prinsip Asas Pemesinan CNC Milling</h3>
+            <ul>
+                <li><strong>Pergerakan Linear:</strong> Alat pemotong bergerak sepanjang paksi X, Y, atau Z untuk memotong bahan.</li>
+                <li><strong>Pergerakan Putaran:</strong> Alat pemotong berputar sambil bergerak ke arah bahan kerja untuk menghasilkan pemotongan.</li>
+            </ul>
+
+            <h3>2. Komponen Utama Mesin CNC Milling</h3>
+            <ul>
+                <li><strong>Spindle:</strong> Bahagian yang memegang dan menggerakkan alat pemotong. Spindle berputar untuk memotong bahan.</li>
+                <li><strong>Table:</strong> Meja mesin tempat bahan kerja diletakkan. Meja ini boleh bergerak dalam arah X dan Y untuk memposisikan bahan kerja.</li>
+                <li><strong>Axes (X, Y, Z):</strong> Mesin CNC Milling biasanya mempunyai sekurang-kurangnya tiga paksi pergerakan – X (kiri-kanan), Y (hadapan-belakang), dan Z (naik-turun).</li>
+                <li><strong>Tool Holder:</strong> Tempat untuk memasang alat pemotong. Alat pemotong boleh ditukar secara automatik atau manual bergantung pada mesin.</li>
+            </ul>
+
+            <h3>3. Jenis Mesin CNC Milling</h3>
+            <ul>
+                <li><strong>Vertical CNC Milling Machine:</strong> Mesin ini mempunyai spindle yang dipasang secara menegak, sesuai untuk pemesinan alatan dengan kedalaman yang besar.</li>
+                <li><strong>Horizontal CNC Milling Machine:</strong> Mesin ini mempunyai spindle yang dipasang secara mendatar, sesuai untuk pemesinan bahan dengan ukuran besar dan permukaan rata.</li>
+                <li><strong>5-Axis CNC Milling Machine:</strong> Mesin ini mempunyai lima paksi pergerakan yang membolehkan pemotongan pada sudut dan kedudukan yang lebih kompleks.</li>
+            </ul>
+
+            <h3>4. Proses Kerja dalam CNC Milling</h3>
+            <ul>
+                <li><strong>Persediaan Bahan Kerja:</strong> Bahan kerja diletakkan di atas meja mesin dan dipasang dengan kemas menggunakan chuck atau penjepit.</li>
+                <li><strong>Pemasangan Alat Pemotong:</strong> Alat pemotong yang sesuai dipasang pada spindle mesin.</li>
+                <li><strong>Pemrograman CNC:</strong> Program CNC ditulis menggunakan G-code untuk mengawal pergerakan mesin.</li>
+                <li><strong>Proses Pemesinan:</strong> Mesin akan mengikut arahan dalam program untuk memotong bahan kerja.</li>
+                <li><strong>Pemeriksaan dan Penamat:</strong> Komponen akan diperiksa untuk memastikan ketepatan dimensi dan kualiti permukaan.</li>
+            </ul>
+
+            <h3>5. Kelebihan Pemesinan CNC Milling</h3>
+            <ul>
+                <li><strong>Ketepatan yang Tinggi:</strong> Mesin CNC mampu menghasilkan komponen dengan toleransi yang sangat ketat.</li>
+                <li><strong>Pengeluaran Berulang:</strong> Mesin CNC boleh menghasilkan banyak unit komponen yang sama dengan ketepatan yang konsisten.</li>
+                <li><strong>Proses Automatik:</strong> Mesin CNC dapat beroperasi secara automatik, mengurangkan keperluan pengawasan manusia.</li>
+                <li><strong>Kemampuan Pemesinan yang Kompleks:</strong> Mesin CNC mampu menghasilkan geometri yang kompleks dengan sedikit usaha tambahan.</li>
+            </ul>
+
+            <h3>6. Aplikasi CNC Milling</h3>
+            <ul>
+                <li><strong>Industri Automotif:</strong> Digunakan untuk menghasilkan komponen seperti blok enjin dan pemacu.</li>
+                <li><strong>Industri Aeroangkasa:</strong> Digunakan untuk menghasilkan komponen pesawat dan helikopter.</li>
+                <li><strong>Industri Peralatan Elektronik:</strong> Digunakan untuk memproses papan litar bercetak (PCB).</li>
+                <li><strong>Industri Kerosakan:</strong> Digunakan untuk memotong dan membentuk logam dan bahan lain untuk peralatan tangan dan mesin.</li>
+            </ul>
+
+            <h3>7. Cabaran dalam CNC Milling</h3>
+            <ul>
+                <li><strong>Kos Mesin yang Tinggi:</strong> Mesin CNC dan sistem perisian yang diperlukan sangat mahal.</li>
+                <li><strong>Keperluan Pengaturcaraan yang Mahir:</strong> Pemrograman CNC memerlukan kemahiran teknikal.</li>
+                <li><strong>Penyelenggaraan Mesin:</strong> Mesin CNC memerlukan penyelenggaraan berkala untuk memastikan prestasi yang optimum.</li>
+            </ul>
+        </article>
+
+        <div class="back-button">
+            <a href="modul.html" class="btn">Kembali ke Modul</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Neotan Technology. All rights reserved.</p>
+    </footer>
+</body>
+</html>
