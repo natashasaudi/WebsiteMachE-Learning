@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.2 Kod Kawalan Numerik dan Pengaturcaraan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Umum */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Container */
+        .sectionM {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px 30px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            line-height: 1.8;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 28px;
+            color: #2b7dbc;
+            margin-bottom: 20px;
+        }
+
+        article h3 {
+            font-size: 22px;
+            color: #2b7dbc;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        article p, article ul {
+            margin-bottom: 20px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        article ul {
+            padding-left: 20px;
+            list-style: disc;
+        }
+
+        article ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Butang Kembali */
+        .back-button {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .back-button .btn {
+            display: inline-block;
+            background-color: #2b7dbc;
+            color: white;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .back-button .btn:hover {
+            background-color: #246799;
+            transform: scale(1.05);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #f0f0f0;
+            color: #777;
+            font-size: 14px;
+            margin-top: 40px;
+        }
+
+        /* Align text to the left in the article */
+        article {
+            text-align: left;
+        }
+
+        article p, article ul {
+            text-align: left;
+        }
+
+        /* Image */
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .sectionM img {
+            max-width: 110%;  /* Increase the size slightly */
+            height: auto;
+            display: inline-block;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">MachE-Learning</div>
+        <ul>
+            <li><a href="index.html">Utama</a></li>
+            <li><a href="modul.html">Modul</a></li>
+            <li><a href="tutorial.html">Tutorial</a></li>
+            <li><a href="kuiz.html">Kuiz</a></li>
+            <li><a href="tentang-kami.html">Tentang Kami</a></li>
+            <li><a href="hubungi-kami.html">Hubungi Kami</a></li>
+            <li><a href="hubungi-pensyarah.html">Hubungi Pensyarah</a></li>
+        </ul>
+    </nav>
+
+    <section class="sectionM">
+        <h2 class="section-title">Kod Kawalan Numerik dan Pengaturcaraan dalam Subjek Kemahiran Pemesinan</h2>
+        
+        <div class="image-container">
+            <img src="numerical.jpg" alt="Numerik">
+        </div>
+
+        <article>
+            <h3>Pengenalan kepada Kod Kawalan Numerik (NC)</h3>
+            <p>Kod Kawalan Numerik (NC) merujuk kepada set arahan atau perintah yang digunakan untuk mengawal pergerakan mesin pemesinan seperti mesin CNC (Computer Numerical Control). Pengaturcaraan NC membolehkan mesin untuk melaksanakan operasi pemesinan secara automatik berdasarkan kod yang diberikan.</p>
+
+            <h3>Jenis Kod Kawalan Numerik</h3>
+            <ul>
+                <li><strong>G-code (kod program):</strong> Mengawal pergerakan mesin dan operasi pemesinan.</li>
+                <li><strong>M-code (kod mekanikal):</strong> Mengawal fungsi mekanikal atau operasi yang berkaitan dengan mesin, seperti menghidupkan atau mematikan spindle.</li>
+            </ul>
+
+            <h3>Struktur Program NC</h3>
+            <ul>
+                <li><strong>Kod G:</strong> Mengawal gerakan atau operasi tertentu.</li>
+                <li><strong>Kod M:</strong> Mengawal operasi mesin (contoh: memulakan atau menghentikan spindle).</li>
+                <li><strong>Kod X, Y, Z:</strong> Mengawal kedudukan ruang tiga dimensi bagi alat pemotong.</li>
+                <li><strong>F (Feedrate):</strong> Mengawal kelajuan suapan atau kelajuan pergerakan alat pemotong.</li>
+                <li><strong>S (Spindle Speed):</strong> Mengawal kelajuan putaran spindle.</li>
+                <li><strong>T (Tool):</strong> Mengawal pemilihan alat pemotong.</li>
+            </ul>
+
+            <h3>Jenis Pengaturcaraan dalam CNC</h3>
+            <ul>
+                <li><strong>Pengaturcaraan Langsung (Manual Programming):</strong> Pengaturcaraan dilakukan secara langsung oleh pengendali dengan menulis kod G dan M di atas kertas atau komputer.</li>
+                <li><strong>Pengaturcaraan CAD/CAM:</strong> CAD digunakan untuk merancang objek atau komponen yang ingin diproses, sementara CAM digunakan untuk menukarkan reka bentuk CAD kepada kod NC yang boleh dibaca oleh mesin CNC.</li>
+            </ul>
+
+            <h3>Contoh Kod G dan M</h3>
+            <ul>
+                <li><strong>G0:</strong> Pergerakan pantas (Rapid Move) ke titik yang ditentukan.</li>
+                <li><strong>G1:</strong> Pergerakan linear dengan kelajuan suapan yang tetap.</li>
+                <li><strong>M3:</strong> Hidupkan spindle mengikut arah jam.</li>
+                <li><strong>M5:</strong> Matikan spindle.</li>
+            </ul>
+
+            <h3>Proses Pengaturcaraan NC</h3>
+            <ul>
+                <li>Merancang dan Menganalisis Komponen.</li>
+                <li>Menulis Program NC.</li>
+                <li>Uji Program.</li>
+                <li>Menjalankan Program pada Mesin CNC.</li>
+            </ul>
+
+            <h3>Kesilapan Umum dalam Pengaturcaraan NC</h3>
+            <ul>
+                <li>Kesalahan dalam Penetapan Kedudukan.</li>
+                <li>Kelajuan Suapan yang Tidak Sesuai.</li>
+                <li>Pilih Alat Pemotong yang Tidak Tepat.</li>
+            </ul>
+        </article>
+
+        <div class="back-button">
+            <a href="modul.html" class="btn">Kembali ke Modul</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Neotan Technology. All rights reserved.</p>
+    </footer>
+</body>
+</html>

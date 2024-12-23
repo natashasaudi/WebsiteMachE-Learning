@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.7 Operasi Mesin Lathe CNC</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Section Container */
+        .sectionM {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px 30px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            line-height: 1.8;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 28px;
+            color: #2b7dbc;
+            margin-bottom: 20px;
+        }
+
+        article h3 {
+            font-size: 22px;
+            color: #2b7dbc;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        article p, article ul {
+            margin-bottom: 20px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        article ul {
+            padding-left: 20px;
+            list-style: disc;
+        }
+
+        article ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Image Styling */
+        .image-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .image-container img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Back Button */
+        .back-button {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .back-button .btn {
+            display: inline-block;
+            background-color: #2b7dbc;
+            color: white;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .back-button .btn:hover {
+            background-color: #246799;
+            transform: scale(1.05);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #f0f0f0;
+            color: #777;
+            font-size: 14px;
+            margin-top: 40px;
+        }
+
+        /* Align text to the left in the article */
+        article {
+            text-align: left;
+        }
+
+        article p, article ul {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">MachE-Learning</div>
+        <ul>
+            <li><a href="index.html">Utama</a></li>
+            <li><a href="modul.html">Modul</a></li>
+            <li><a href="tutorial.html">Tutorial</a></li>
+            <li><a href="kuiz.html">Kuiz</a></li>
+            <li><a href="tentang-kami.html">Tentang Kami</a></li>
+            <li><a href="hubungi-kami.html">Hubungi Kami</a></li>
+        </ul>
+    </nav>
+
+    <section class="sectionM">
+        <h2 class="section-title">Operasi Mesin Lathe CNC</h2>
+        <article>
+
+        <div class="image-container">
+            <img src="cnc.jpg" alt="Milling Parameters">
+        </div>
+
+            <h3>Pengenalan</h3>
+            <p>Mesin lathe CNC (Computer Numerical Control) adalah alat yang digunakan dalam pemesinan untuk memproses bahan kerja dengan cara memutar bahan tersebut pada paksi berputar sambil alat pemotong bergerak dalam arah mendatar atau menegak untuk mengeluarkan material dari bahan tersebut. Mesin ini digunakan untuk menghasilkan komponen dengan bentuk bulat atau simetri putar yang memerlukan ketepatan tinggi seperti poros, cincin, dan bahagian-bahagian lain. Mesin lathe CNC juga mempunyai kawalan digital yang membolehkan ketepatan yang sangat tinggi dalam penghasilan komponen.</p>
+
+            <h3>Operasi Utama Mesin Lathe CNC</h3>
+            <p>Berikut adalah beberapa operasi utama yang boleh dilakukan dengan mesin lathe CNC, yang digunakan dalam pembuatan komponen kejuruteraan yang memerlukan ketepatan tinggi dan kualiti permukaan yang baik:</p>
+            <ul>
+                <li><strong>Pemotongan Silinder (Turning):</strong> Operasi asas yang melibatkan pemutaran bahan kerja pada kelajuan tinggi. Alat pemotong bergerak secara mendatar sepanjang paksi bahan kerja untuk mengurangkan ketebalan bahan tersebut. Pemotongan ini menghasilkan bentuk silinder atau rod dengan diameter yang diinginkan. Pemilihan jenis turning seperti <em>Straight Turning</em>, <em>Taper Turning</em>, dan <em>Contour Turning</em> bergantung kepada bentuk yang diperlukan.</li>
+                <li><strong>Pemotongan Lubang (Drilling):</strong> Digunakan untuk membuat lubang pada bahan kerja dengan mata pemotong berputar. Mesin lathe CNC boleh menghasilkan lubang dengan diameter dan kedalaman yang tepat. Terdapat dua jenis lubang yang biasanya dilakukan: lubang lurus yang ditebuk secara menegak, dan lubang konikal yang ditebuk pada sudut tertentu untuk menghasilkan bentuk yang berbeza.</li>
+                <li><strong>Pengisaran (Boring):</strong> Proses pemesinan untuk memperbesar diameter lubang yang telah ada, bertujuan untuk mencapai ukuran yang lebih tepat dan menghasilkan permukaan yang lebih halus di dalam lubang tersebut.</li>
+                <li><strong>Pemotongan Alur (Grooving):</strong> Digunakan untuk menghasilkan alur atau saluran pada permukaan bahan kerja. Operasi ini penting dalam pembuatan komponen yang memerlukan kedudukan yang tepat untuk pemasangan komponen lain seperti cincin atau segel.</li>
+                <li><strong>Pemotongan Ulir atau Benang (Threading):</strong> Digunakan untuk membuat ulir pada permukaan bahan kerja. Terdapat dua jenis threading, iaitu threading luaran (untuk bahagian luar bahan kerja) dan threading dalaman (untuk bahagian dalam lubang bahan kerja). Mesin lathe CNC membolehkan pembuatan ulir dengan ketepatan yang sangat tinggi.</li>
+                <li><strong>Facing:</strong> Operasi untuk meratakan atau membuat permukaan rata pada hujung bahan kerja. Ini bertujuan untuk memastikan bahan kerja dipasang dengan stabil pada mesin dan menghasilkan permukaan akhir yang licin dan tepat.</li>
+                <li><strong>Parting (Cut-Off):</strong> Proses pemotongan bahan kerja dari bahan induk atau menghasilkan komponen dengan panjang yang diinginkan. Alat parting digunakan untuk memotong bahan kerja pada kedudukan yang telah ditetapkan.</li>
+                <li><strong>Profiling (Profil Pemotongan):</strong> Digunakan untuk memotong bentuk atau garis profil tertentu pada permukaan bahan kerja. Mesin lathe CNC dapat melakukan pemotongan profil yang kompleks dengan ketepatan yang tinggi.</li>
+                <li><strong>Polishing dan Finishing:</strong> Setelah operasi pemotongan selesai, bahan kerja biasanya melalui proses polishing untuk menghasilkan permukaan yang licin dan bebas cacat. Mesin lathe CNC sering dilengkapi dengan alat tambahan seperti berus atau alat pemoles untuk menyelesaikan permukaan komponen.</li>
+            </ul>
+        </article>
+
+
+        <div class="back-button">
+            <a href="modul.html" class="btn">Kembali ke Modul</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Neotan Technology. All rights reserved.</p>
+    </footer>
+</body>
+</html>

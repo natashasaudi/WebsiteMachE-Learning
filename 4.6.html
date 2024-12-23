@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.6 Parameter Pemesinan Milling</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Section Container */
+        .sectionM {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px 30px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            line-height: 1.8;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 28px;
+            color: #2b7dbc;
+            margin-bottom: 20px;
+        }
+
+        article h3 {
+            font-size: 22px;
+            color: #2b7dbc;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        article p, article ul {
+            margin-bottom: 20px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        article ul {
+            padding-left: 20px;
+            list-style: disc;
+        }
+
+        article ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Back Button */
+        .back-button {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .back-button .btn {
+            display: inline-block;
+            background-color: #2b7dbc;
+            color: white;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .back-button .btn:hover {
+            background-color: #246799;
+            transform: scale(1.05);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #f0f0f0;
+            color: #777;
+            font-size: 14px;
+            margin-top: 40px;
+        }
+
+        /* Align text to the left in the article */
+        article {
+            text-align: left;
+        }
+
+        article p, article ul {
+            text-align: left;
+        }
+
+        /* Image Style */
+        .image-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">MachE-Learning</div>
+        <ul>
+            <li><a href="index.html">Utama</a></li>
+            <li><a href="modul.html">Modul</a></li>
+            <li><a href="tutorial.html">Tutorial</a></li>
+            <li><a href="kuiz.html">Kuiz</a></li>
+            <li><a href="tentang-kami.html">Tentang Kami</a></li>
+            <li><a href="hubungi-kami.html">Hubungi Kami</a></li>
+        </ul>
+    </nav>
+
+    <section class="sectionM">
+        <h2 class="section-title">Parameter Pemesinan Milling</h2>
+        
+
+        <article>
+            <h3>Kecepatan Potongan (Cutting Speed)</h3>
+            <p>Kecepatan potongan merujuk kepada kelajuan pergerakan alat pemotong berhubung dengan bahan kerja semasa proses pemotongan. Kecepatan ini biasanya diukur dalam meter per minit (m/min) dan ia mempengaruhi kualiti pemotongan dan ketahanan alat pemotong.</p>
+            <p><strong>Formula:</strong> V = π × D × N</p>
+            <p><strong>V:</strong> Kecepatan potongan (m/min)</p>
+            <p><strong>D:</strong> Diameter alat pemotong (m)</p>
+            <p><strong>N:</strong> Kelajuan putaran (rpm)</p>
+
+            <h3>Kelajuan Suapan (Feed Rate)</h3>
+            <p>Kelajuan suapan merujuk kepada kelajuan bahan kerja bergerak melalui alat pemotong semasa proses pemotongan. Ia diukur dalam milimeter per minit (mm/min) atau inci per minit (ipm). Kelajuan suapan yang sesuai memastikan pemotongan yang stabil dan mengurangkan risiko kemalangan atau kerosakan alat.</p>
+            <p><strong>Formula:</strong> f = N × fz</p>
+            <p><strong>f:</strong> Kelajuan suapan (mm/min)</p>
+            <p><strong>N:</strong> Kelajuan putaran (rpm)</p>
+            <p><strong>fz:</strong> Suapan per gigi alat pemotong (mm/gigi)</p>
+
+            <h3>Kedalaman Potongan (Cutting Depth)</h3>
+            <p>Kedalaman potongan merujuk kepada jarak yang dimasukkan oleh alat pemotong ke dalam bahan kerja. Kedalaman potongan boleh dibahagikan kepada dua kategori:</p>
+            <ul>
+                <li><strong>Kedalaman potongan utama:</strong> Jarak potongan sepanjang paksi Z (vertikal).</li>
+                <li><strong>Kedalaman potongan mendatar:</strong> Jarak potongan dalam arah paksi X atau Y (mendatar).</li>
+            </ul>
+
+            <h3>Lebar Potongan (Cutting Width)</h3>
+            <p>Lebar potongan adalah jarak yang dipotong oleh alat pemotong dalam arah mendatar (paksi X atau Y). Lebar potongan ini mempengaruhi jumlah bahan yang dipotong pada satu masa dan mempengaruhi daya yang diperlukan untuk proses pemotongan.</p>
+
+            <h3>Sudut Pemotongan (Cutting Angle)</h3>
+            <p>Sudut pemotongan adalah sudut antara alat pemotong dan bahan kerja semasa pemotongan. Sudut ini mempengaruhi kecekapan dan kualiti pemotongan.</p>
+
+            <h3>Jenis Alat Pemotong (Cutting Tool Type)</h3>
+            <p>Jenis alat pemotong yang digunakan juga mempengaruhi parameter pemesinan. Beberapa jenis alat pemotong adalah:</p>
+            <ul>
+                <li><strong>Alat pemotong bersudut (end mill):</strong> Digunakan untuk pemotongan yang memerlukan pergerakan ke arah mendatar dan vertikal.</li>
+                <li><strong>Alat pemotong rata (face mill):</strong> Digunakan untuk pemotongan permukaan rata atau luas.</li>
+                <li><strong>Alat pemotong jenis boring:</strong> Digunakan untuk mengembangkan lubang yang sudah ada.</li>
+            </ul>
+
+            <h3>Kelajuan Putaran (Spindle Speed)</h3>
+            <p>Kelajuan putaran merujuk kepada berapa kali alat pemotong berputar dalam satu minit (rpm). Kelajuan putaran yang betul mesti dipilih bergantung pada jenis bahan kerja, jenis alat pemotong, dan kecepatan potongan yang diinginkan.</p>
+            <p><strong>Formula:</strong> N = V / (π × D)</p>
+
+            <h3>Kekuatan Alat Pemotong (Cutting Force)</h3>
+            <p>Kekuatan alat pemotong merujuk kepada daya yang dihasilkan semasa pemotongan, yang terhasil daripada geseran antara alat pemotong dan bahan kerja. Kekuatan ini mempengaruhi penggunaan tenaga mesin dan ketahanan alat pemotong.</p>
+
+            <h3>Toleransi dan Kualiti Permukaan (Surface Finish and Tolerance)</h3>
+            <p>Kualiti permukaan adalah aspek penting dalam pemesinan milling. Pemilihan parameter pemotongan yang betul seperti kelajuan suapan dan kecepatan potongan boleh mempengaruhi kesan akhir permukaan bahan kerja.</p>
+            <ul>
+                <li>Toleransi merujuk kepada had yang dibenarkan untuk penyimpangan dimensi dari ukuran yang ditetapkan.</li>
+                <li>Kualiti permukaan merujuk kepada ketepatan dan kelembutan permukaan yang dihasilkan.</li>
+            </ul>
+        </article>
+
+        <div class="back-button">
+            <a href="modul.html" class="btn">Kembali ke Modul</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Neotan Technology. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.4 Prinsip Pemotongan dalam Pemesinan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Umum */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Container */
+        .sectionM {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px 30px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            line-height: 1.8;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 28px;
+            color: #2b7dbc;
+            margin-bottom: 20px;
+        }
+
+        article h3 {
+            font-size: 22px;
+            color: #2b7dbc;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        article p, article ul {
+            margin-bottom: 20px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        article ul {
+            padding-left: 20px;
+            list-style: disc;
+        }
+
+        article ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Butang Kembali */
+        .back-button {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .back-button .btn {
+            display: inline-block;
+            background-color: #2b7dbc;
+            color: white;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .back-button .btn:hover {
+            background-color: #246799;
+            transform: scale(1.05);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #f0f0f0;
+            color: #777;
+            font-size: 14px;
+            margin-top: 40px;
+        }
+
+        /* Align text to the left in the article */
+        article {
+            text-align: left;
+        }
+
+        article p, article ul {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">MachE-Learning</div>
+        <ul>
+            <li><a href="index.html">Utama</a></li>
+            <li><a href="modul.html">Modul</a></li>
+            <li><a href="tutorial.html">Tutorial</a></li>
+            <li><a href="kuiz.html">Kuiz</a></li>
+            <li><a href="tentang-kami.html">Tentang Kami</a></li>
+            <li><a href="hubungi-kami.html">Hubungi Kami</a></li>
+            <li><a href="hubungi-pensyarah.html">Hubungi Pensyarah</a></li>
+        </ul>
+    </nav>
+
+    <section class="sectionM">
+        <h2 class="section-title">Prinsip Pemotongan dalam Pemesinan</h2>
+        <article>
+            <h3>Pengertian Cutting Axis (Paksi Pemotongan)</h3>
+            <p>Cutting axis merujuk kepada arah di mana alat pemotong bergerak untuk memotong bahan kerja. Terdapat beberapa jenis paksi pemotongan bergantung kepada jenis mesin pemesinan, seperti mesin CNC Milling dan Turning. Paksi ini memberi pengaruh kepada jenis potongan, kelajuan, dan ketepatan yang boleh dicapai.</p>
+            <ul>
+                <li>Dalam mesin CNC Milling, paksi pemotongan utama adalah paksi Z, yang merujuk kepada arah vertikal (naik-turun). Paksi X dan Y mengawal pergerakan alat pemotong dalam arah horizontal (kiri-kanan, hadapan-belakang).</li>
+                <li>Dalam mesin CNC Turning, paksi pemotongan biasanya berfokus kepada arah X dan Z, dengan paksi X mengawal pergerakan alat pemotong secara mendatar dan paksi Z mengawal arah gerakan sepanjang panjang bahan kerja.</li>
+            </ul>
+
+            <h3>Jenis-jenis Pergerakan Pemotongan</h3>
+            <ul>
+                <li><strong>Pergerakan Alat Pemotong:</strong> Gerakan ini merujuk kepada pergerakan alat pemotong yang dipasang pada mesin untuk menghasilkan bentuk yang diinginkan.</li>
+                <li><strong>Pergerakan Bahan Kerja:</strong> Bahan kerja yang dipasang pada meja mesin akan bergerak untuk memberikan interaksi yang betul dengan alat pemotong.</li>
+            </ul>
+
+            <h3>Prinsip Pemotongan</h3>
+            <ul>
+                <li><strong>Kecepatan Potongan (Cutting Speed):</strong> Kelajuan pergerakan alat pemotong berhubung dengan bahan kerja.</li>
+                <li><strong>Kelajuan Suapan (Feed Rate):</strong> Kelajuan bahan kerja bergerak melalui alat pemotong semasa proses pemotongan.</li>
+                <li><strong>Sudut Pemotongan (Cutting Angle):</strong> Sudut yang terbentuk antara alat pemotong dan bahan kerja semasa pemotongan.</li>
+                <li><strong>Kedalaman Potongan (Cutting Depth):</strong> Kedalaman alat pemotong semasa memotong bahan kerja.</li>
+                <li><strong>Kawasan Pengikisan (Cutting Zone):</strong> Kawasan di mana alat pemotong berinteraksi dengan bahan kerja.</li>
+            </ul>
+
+            <h3>Jenis Pemotongan Berdasarkan Paksi</h3>
+            <ul>
+                <li><strong>Pemotongan Linear:</strong> Pemotongan berlaku apabila alat pemotong bergerak dalam arah linear (hanya dalam satu arah paksi), contohnya pemotongan dalam arah X, Y, atau Z.</li>
+                <li><strong>Pemotongan Bulat (Circular Cutting):</strong> Pemotongan berlaku apabila alat pemotong bergerak secara melengkung untuk menghasilkan bentuk bulat atau lekuk pada bahan kerja.</li>
+                <li><strong>Pemotongan Kontur (Profile Cutting):</strong> Pemotongan berlaku apabila alat pemotong mengikuti bentuk atau profil tertentu pada bahan kerja.</li>
+            </ul>
+
+            <h3>Faktor yang Mempengaruhi Pemotongan</h3>
+            <ul>
+                <li><strong>Jenis bahan:</strong> Bahan keras atau lembut akan memerlukan penyesuaian dalam kelajuan dan kedalaman potongan.</li>
+                <li><strong>Jenis alat pemotong:</strong> Bentuk dan material alat pemotong akan mempengaruhi kecekapan pemotongan dan ketahanan alat tersebut.</li>
+                <li><strong>Keadaan mesin:</strong> Mesin yang diselenggara dengan baik akan memberikan hasil pemotongan yang lebih baik.</li>
+            </ul>
+        </article>
+
+        <div class="back-button">
+            <a href="modul.html" class="btn">Kembali ke Modul</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Neotan Technology. All rights reserved.</p>
+    </footer>
+</body>
+</html>

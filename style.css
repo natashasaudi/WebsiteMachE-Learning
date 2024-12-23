@@ -1,0 +1,832 @@
+/* Global Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background-color: #f0f4f8;
+            color: #031273;
+            scroll-behavior: smooth;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        /* Navigation Bar */
+        nav {
+            position: flex;
+            width: 100%;
+            background-color: #003b5b;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        nav .logo {
+            color: #fff;
+            font-size: 30px;
+            font-weight: 600;
+	    padding: 10px
+        }
+       nav ul {
+           list-style: none;
+           display: flex;
+           margin: 0;
+           padding: 0;
+        }
+        nav ul li {
+            margin-left: 25px;
+        }
+        nav ul li a {
+            color: #fff;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: orangered;
+        }
+	.logo {
+            width: auto; /* Lebar logo */
+            height: auto; /* Menyesuaikan tinggi secara proporsional */
+            display: block; /* Agar logo menjadi elemen blok */
+	}
+
+.section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #daf0ff;
+}
+
+.section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+
+
+
+
+/* Utama Section */
+        .sectionU {
+            position: relative;
+            height: 800px; /* Anda boleh ubah tinggi seksyen */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            text-align: center;
+            padding: 0 20px;
+            overflow: hidden;
+        }
+
+        /* Gambar latar belakang dengan efek blur */
+        .sectionU::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('lathe.jpg'); /* Tukar dengan URL imej anda */
+            background-size: cover;
+            background-position: center;
+            background-repeat: repeat;
+            filter: blur(5px); /* Efek buram hanya untuk latar */
+            z-index: -1;
+        }
+	.utama-content {
+            z-index: 1;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        /* Konten Utama */
+        .sectionU h1 {
+            font-size: 50px;
+            margin-bottom: 50px;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        .sectionU p {
+            font-size: 25px;
+	    color: white;
+            margin-bottom: 30px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .sectionU .cta-btn {
+            background-color: orangered;
+            padding: 15px 25px;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .sectionU .cta-btn:hover {
+            background-color: #e63900;
+        }
+	
+
+
+
+/* Modul Section Styles */
+        .sectionM {
+            padding: 60px 30px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .sectionM h2 {
+            text-align: center;
+            color: #003b5b;
+            margin-bottom: 40px;
+            font-size: 32px;
+        }
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            flex: 1 1 250px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        .card i {
+            font-size: 40px;
+            color: orangered;
+            margin-bottom: 15px;
+        }
+        .card h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #003b5b;
+        }
+        .card p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+
+.back-button {
+    text-align: center; /* Melaraskan ke tengah */
+    margin-top: 20px; /* Jarak dari elemen sebelumnya */
+    margin-bottom: 40px; /* Jarak ke bahagian bawah halaman */
+}
+
+.back-button .btn {
+    display: inline-block;
+    background-color: #4CAF50; /* Warna hijau */
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.back-button .btn:hover {
+    background-color: #45a049; /* Warna hijau lebih gelap */
+    transform: scale(1.05); /* Kesan zoom sedikit */
+}
+
+.back-button .btn:active {
+    background-color: #3e8e41; /* Warna hijau lebih gelap apabila ditekan */
+    transform: scale(0.98); /* Mengecil sedikit apabila ditekan */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Tutorial Styles */
+.sectionT {
+    padding: 60px 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.sectionT h2 {
+    text-align: center;
+    color: #003b5b;
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.videos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.video-card {
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px; /* Menambah padding */
+    text-align: center;
+    transition: transform 0.3s ease;
+    height: 450px; /* Membesarkan kotak */
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+}
+
+.video-card iframe {
+    width: 100%;
+    height: 220px; /* Membesarkan iframe */
+    border-radius: 8px;
+}
+
+.video-card h3 {
+    margin-top: 15px; /* Menambah margin atas */
+    font-size: 1.3em; /* Membesarkan font size */
+    color: #333;
+}
+
+.video-card p {
+    margin-top: 10px; /* Menambah margin atas */
+    font-size: 1em; /* Membesarkan font size */
+    color: #555;
+    line-height: 1.4; /* Menambah keterbacaan teks */
+}
+
+
+
+
+
+
+/* Kuiz Styles */
+.sectionK {
+    padding: 60px 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.sectionK h2 {
+    text-align: center;
+    color: #003b5b;
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+#quiz {
+    background-color: #f4f4f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn-submit, .btn-reset {
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn-submit {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.btn-submit:hover {
+    background-color: #45a049;
+}
+
+.btn-reset {
+    background-color: #f44336;
+    color: white;
+}
+
+.btn-reset:hover {
+    background-color: #e53935;
+}
+
+.result {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    display: none;
+}
+
+.fade-in {
+    display: block;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Animation for fade-in effect */
+.fade-in {
+    animation: fadeIn 1s ease-out;
+}
+
+/* Fade-in keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Styling for the result container */
+#quiz-result {
+    border: 2px solid #4CAF50;
+    background-color: #f4f4f4;
+    padding: 30px;  /* Increased padding */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;  /* Increased width */
+    margin: 20px auto;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Styling for the header */
+#quiz-result h3 {
+    text-align: centre;  /* Align text to the left */
+    color: #4CAF50;
+    font-size: 28px;  /* Increased font size */
+    margin-bottom: 15px;
+}
+
+/* Styling for the answers and justifications */
+#quiz-result p {
+    margin: 12px 0;  /* Increased margin */
+    font-size: 18px;  /* Increased font size */
+    line-height: 1.7;  /* Adjusted line height for better readability */
+}
+
+/* Style for correct answers */
+#quiz-result .correct {
+    color: #28a745;
+    font-weight: bold;
+}
+
+/* Style for incorrect answers */
+#quiz-result .incorrect {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+
+
+
+/* Tentang Kami Styles */
+.sectionTK {
+    padding: 60px 30px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #f5faff;
+    border-radius: 15px;
+}
+.sectionTK h2 {
+    text-align: center;
+    color: #003b5b;
+    margin-bottom: 40px;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.icon-container {
+    background-color: #e6f2ff;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tentangkami-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.tentangkami-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 1200px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 40px;
+    background-color: #f9fafc;
+}
+
+.tentangkami-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.image-container {
+    margin-bottom: 15px;
+}
+.round-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.icon-container i {
+    font-size: 36px;
+    color: #003b5b;
+}
+
+.card-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #003b5b;
+    font-weight: 600;
+}
+
+.card-description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.card-button {
+    background-color: #ff6f61;
+    padding: 12px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card-button:hover {
+    background-color: #d55d4b;
+    transform: scale(1.05);
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+    .tentangkami-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tentangkami-card {
+        width: 90%;
+    }
+}
+
+
+/* Tenaga Pengajar Styles */
+.sectionHK {
+            padding: 60px 30px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .sectionHK h2 {
+            text-align: center;
+            color: #003b5b;
+            margin-bottom: 40px;
+            font-size: 32px;
+        }
+
+.sectionHP {
+            padding: 60px 30px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .sectionHP h2 {
+            text-align: center;
+            color: #003b5b;
+            margin-bottom: 40px;
+            font-size: 32px;
+        }
+
+
+        /* Fullscreen background image with blur effect */
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('fptv.jpg'); /* Set your background image here */
+            background-size: cover;
+            background-position: center;
+            filter: blur(8px); /* Apply the blur effect */
+            z-index: -1; /* Ensure it stays behind the content */
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around; /* Distribute the profile cards horizontally */
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+            }
+
+        .profile-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.8); /* Add some transparency for better readability */
+            border-radius: 10px;
+            box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 350px;
+            text-align: center;
+            transition: transform 0.3s;
+            margin: 10px; /* Add space between the cards */
+        }
+
+        .profile-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .profile-card img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .profile-card h1 {
+            font-size: 1.2em;
+            margin: 10px 0 5px;
+            color: #333;
+        }
+
+        .profile-card h2 {
+            font-size: 1.1em;
+            margin: 5px 0;
+            color: #777;
+        }
+
+        .profile-card p {
+            font-size: 0.9em;
+            margin: 10px 0;
+            color: #555;
+        }
+
+        .profile-card a {
+            display: inline-block;
+            margin: 5px 5px;
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 0.9em;
+            border-radius: 5px;
+            color: #fff;
+            background: #007BFF;
+            transition: background 0.3s;
+        }
+
+        .profile-card a:hover {
+            background: #0056b3;
+        }
+
+        .profile-card .secondary {
+            background: #6c757d;
+        }
+
+        .profile-card .secondary:hover {
+            background: #545b62;
+        }
+
+        /* Style for the icon */
+        .profile-card .cv-icon {
+            margin-right: 8px;
+        }
+
+        .profile-card button {
+            padding: 10px 15px;
+            font-size: 1em;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .profile-card button:hover {
+            background-color: #218838;
+        }
+
+
+
+/* Style for the "Kembali ke Tentang Kami untuk Tenaga Pengajar" button */
+.back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    margin-bottom: 30px; /* Add space between button and footer */
+}
+
+/* Button Hover Effect */
+.back-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Position the button at the bottom and center */
+.container {
+    position: relative;
+    padding-bottom: 100px; /* Extra space for the button */
+}
+
+.back-btn {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); /* Center the button horizontally */
+}
+
+
+
+
+
+
+
+
+/* Hubungi Kami Styles */
+
+
+
+.contact-form {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+.contact-form h4 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #003b5b;
+            font-size: 28px;
+        }
+.contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 12px 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+.contact-form input:focus, .contact-form textarea:focus {
+            border-color: orangered;
+            outline: none;
+        }
+.contact-form #submit {
+            background-color: orangered;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            display: block;
+            margin: auto;
+        }
+.contact-form #submit:hover {
+            background-color: #e63900;
+        }
+
+
+
+        
+        /* Footer */
+        footer {
+            background-color: #003b5b;
+            color: #003b5b;
+            text-align: center;
+            padding: 50px 10px;
+        }
+	.footer p {
+	    font-size: 16px;
+            color: #ffde21;
+        }
+
+
+
+
+
+
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul {
+                flex-direction: column;
+                background-color: #003b5b;
+                position: absolute;
+                top: 60px;
+                left: -100%;
+                width: 100%;
+                transition: left 0.3s;
+            }
+            nav ul.active {
+                left: 0;
+            }
+            nav ul li {
+                margin: 15px 0;
+            }
+            nav .menu-toggle {
+                display: block;
+                cursor: pointer;
+                color: #fff;
+                font-size: 24px;
+            }
+        }
+        @media (min-width: 769px) {
+            nav .menu-toggle {
+                display: none;
+            }
+        }
+</style>

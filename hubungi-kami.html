@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utama | MachE-Learning</title>
+    <!-- Google Fonts for Enhanced Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrQd6+N0tzdgiXlNULhJ5PSh3OeVgTtFF+XQvDcg3LzBnYxk4+zLqJ6UG6A/wt6upGdr1eE7zjvFvKuklg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Navigasi -->
+   <nav>
+        <div class="logo">MachE-Learning</div>
+        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+
+        <ul>
+            <li><a href="index.html">Utama</a></li>
+            <li><a href="modul.html">Modul</a></li>
+            <li><a href="tutorial.html">Tutorial</a></li>
+            <li><a href="kuiz.html">Kuiz</a></li>
+            <li><a href="tentang-kami.html">Tentang Kami</a></li>
+            <li><a href="hubungi-kami.html">Hubungi Kami</a></li>
+	    <li><a href="hubungi-pensyarah.html">Hubungi Pensyarah</a></li>
+
+        </ul>
+    </nav>
+
+<!-- Contact Us Admin Section -->
+ <section class="sectionHK" id="hubungikami">
+     <h2 class="section-title">Hubungi Kami</h2>
+    <div class="contact-form">
+        <h4>Sebarang masalah, boleh berhubung dengan kami.</h4>
+        <form method="post" action="https://script.google.com/macros/s/AKfycbxl9WaEAVW8ifFCFyJ-CBSBoZNnHa25un-vLPPMqTq20zQuglQgIs7WoH_DDKLQlXTf/exec" name="contact-form">
+            <input type="text" name="Nama" placeholder="Nama" required>
+            <input type="text" name="No.Telefon" placeholder="No. Telefon" required>
+            <input type="email" name="Email" placeholder="Emel" required>
+            <textarea name="Message" rows="5" placeholder="Mesej anda" required></textarea>
+            <input type="submit" value="Hantar" id="submit">
+        </form>
+    </div>
+</section>
+
+
+<!-- Footer -->
+    <footer>
+       <p>&copy; 2024 Neotan Technology. All rights reserved.</p>
+    </footer>
+
+
+
+
+<script>
+// Contact Form Submission to Google Sheets (Hubungi Kami)
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxcDLIX7m0s_R7gPpWYtGEGIy52HU09x7oxHtKJlHpCFSv7CHsMyPMxWJv6lXguxagw/exec'; // Replace with correct URL for "Hubungi Kami"
+const contactForm = document.forms['contact-form'];
+
+contactForm.addEventListener('submit', e => {
+    e.preventDefault();
+    fetch(scriptURL, { method: 'POST', body: new FormData(contactForm) })
+    .then(response => response.json())  // Parse the response as JSON
+    .then(data => {
+        if (data.result === "success") {
+            alert("Thank you! Your form has been submitted successfully.");
+            contactForm.reset();
+        } else {
+            alert("Something went wrong. Please try again.");
+        }
+    })
+    .catch(error => {
+        console.error('Error!', error.message);
+        alert("There was an error with your submission. Please try again.");
+    });
+});
+
+ </script>
+
+</body>
+</html>

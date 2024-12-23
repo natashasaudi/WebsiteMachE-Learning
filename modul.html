@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utama | MachE-Learning</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrQd6+N0tzdgiXlNULhJ5PSh3OeVgTtFF+XQvDcg3LzBnYxk4+zLqJ6UG6A/wt6upGdr1eE7zjvFvKuklg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Fullscreen background image with blur effect */
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('fptv.jpg'); /* Background image */
+            background-size: cover;
+            background-position: center;
+            filter: blur(8px); /* Blur effect */
+            z-index: -1; /* Behind the content */
+        }
+
+        /* Card Styling */
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;  /* Vertikal tengah */
+            align-items: center;      /* Horizontal tengah */
+            text-align: center;       /* Pastikan teks dalam <h3> berada di tengah */
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h3 {
+            margin: 2;
+            font-size: 26px;
+            color: #333;
+        }
+
+    </style>
+
+
+<style>
+    /* Styling Section Title for Better Visibility */
+    .section-title {
+        font-size: 36px;
+        color: #fff; /* White text for maximum contrast */
+        text-align: center;
+        margin: 20px auto; /* Center alignment with space */
+        padding: 15px 30px; /* Larger padding for readability */
+        background: rgba(0, 0, 0, 0.8); /* Solid dark background with slight transparency */
+        border-radius: 10px; /* Rounded edges for aesthetic appeal */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+        max-width: 80%; /* Prevent overly wide text */
+    }
+
+    /* Ensure Cards and Text Remain Clear */
+    .cards .card {
+        background: rgba(255, 255, 255, 0.9); /* Light background for contrast */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .cards .card h3 {
+        color: #333; /* Strong contrast against light background */
+    }
+</style>
+
+
+
+</head>
+<body>
+    <!-- Fullscreen Background -->
+    <div class="background"></div>
+
+    <!-- Navigasi -->
+    <nav>
+        <div class="logo">MachE-Learning</div>
+        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+        <ul>
+            <li><a href="index.html">Utama</a></li>
+            <li><a href="modul.html">Modul</a></li>
+            <li><a href="tutorial.html">Tutorial</a></li>
+            <li><a href="kuiz.html">Kuiz</a></li>
+            <li><a href="tentang-kami.html">Tentang Kami</a></li>
+            <li><a href="hubungi-kami.html">Hubungi Kami</a></li>
+            <li><a href="hubungi-pensyarah.html">Hubungi Pensyarah</a></li>
+        </ul>
+    </nav>
+
+    <!-- Seksyen Modul -->
+    <section class="sectionM" id="modul">
+        <h2 class="section-title" style="color: white;">Modul Pembelajaran</h2>
+        <div class="cards">
+            <a href="4.1.html" class="card">
+                <i class="fas fa-user-shield"></i>
+                <h3>Keselamatan dan Peraturan dalam Bengkel</h3>
+                <p>Ketahui langkah-langkah keselamatan penting untuk melindungi diri anda dan peralatan di bengkel.</p>
+            </a>
+            <a href="4.2.html" class="card">
+                <i class="fas fa-code"></i>
+                <h3>Kod Kawalan Numerik (CNC)</h3>
+                <p>Belajar pengaturcaraan CNC untuk mengawal mesin pemesinan secara efisien.</p>
+            </a>
+            <a href="4.3.html" class="card">
+                <i class="fas fa-cogs"></i>
+                <h3>Pengenalan Mesin Kisar CNC</h3>
+                <p>Mengetahui proses pemesinan mesin kisar yang dikawal oleh komputer menggunakan sistem Computer Numerical Control (CNC).</p>
+            </a>
+            <a href="4.4.html" class="card">
+                <i class="fas fa-cut"></i>
+                <h3>Prinsip Pemotongan</h3>
+                <p>Mengetahui prinsip dan jenis pemotongan berdasarkan paksi dalam pemesinan.</p>
+            </a>
+            <a href="4.5.html" class="card">
+                <i class="fas fa-ruler-combined"></i>
+                <h3>Datum dan Dimensi</h3>
+                <p>Memahami konsep dan jenis datum, fungsi serta penggunaannya untuk ketepatan dalam pemesinan, di samping memahami jenis, simbol, dan prinsip dimensi dalam lukisan teknikal.</p>
+            </a>
+            <a href="4.6.html" class="card">
+                <i class="fas fa-cogs"></i>
+                <h3>Parameter Pemesinan Milling</h3>
+                <p>Memahami parameter utama dalam pemesinan mesin kisar yang mempengaruhi kecekapan dan kualiti pemotongan.</p>
+            </a>
+            <a href="4.7.html" class="card">
+                <i class="fas fa-lathe"></i>
+                <h3>Operasi Mesin CNC Lathe</h3>
+                <p>Memahami fungsi, jenis operasi, dan cara menghasilkan komponen tepat menggunakan mesin lathe CNC serta memilih kelajuan dan suapan yang sesuai.</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Neotan Technology. All rights reserved.</p>
+    </footer>
+</body>
+</html>
